@@ -3,6 +3,7 @@ var app = express(); //app es una instancia de express.
 var bodyParser  = require("body-parser");
 var methodOverride = require("method-override");
 var mongoose = require('mongoose');
+var router = express.Router();
 
 //analizar application/x-www-form-urlencoded
 app.use(bodyParser.urlencoded({ extended: false }));  
@@ -16,8 +17,18 @@ app.get('/', function(req, res) {
   res.send('hello world');
 });
 
+routes = require('./routes/routes')(app);
+
 //correr el servidor en el puerto 3000
 app.listen(3000, function () {
   console.log('El servidor esta corriendo en http://localhost:3000');
+});
+
+// Devolución de llamada opcional que se activa cuando se ha completado la conexión inicial
+var uri = 'mongodb://localhost/salamandra';
+
+mongoose.connect(uri, function(err, res){
+	if(err) throw err;
+    else console.log('Conexión realizada');
 });
 

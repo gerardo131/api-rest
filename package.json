@@ -1,6 +1,6 @@
 {
  "name": "node-api-rest",
- "version": "0.0.1",
+ "version": "1.0.0",
  "dependencies": {
  "mongoose": "~4.4.12",
  "express": "^4.7.1",
