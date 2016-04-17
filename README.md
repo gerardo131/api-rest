@@ -51,7 +51,7 @@ Por lo tanto package.json tendrá:
  }
 }
 ```
-*Mongoose es la librería que nos va ayudar a conectar con mongoDB
-*Express nos va a ayudar a implementar los métodos de ruta HTTP: GET, POST, etc.
-*Method-override va hacer la llamada para enviar una solicitud POST a una URL con el método reemplazado como el valor de esa clave cadena de consulta. Este método de utilizar un valor de la consulta normalmente se utiliza en conjunción con llanura HTML <form> elementos cuando se trata de apoyar navegadores antiguos pero todavía utilizar métodos más nuevos.
-*body-parser permitimos que se pueda parsear JSON, analizando ya sea función o cadena.
+* Mongoose es la librería que nos va ayudar a conectar con mongoDB
+* Express nos va a ayudar a implementar los métodos de ruta HTTP: GET, POST, etc.
+* Method-override va hacer la llamada para enviar una solicitud POST a una URL con el método reemplazado como el valor de esa clave cadena de consulta. Este método de utilizar un valor de la consulta normalmente se utiliza en conjunción con llanura HTML <form> elementos cuando se trata de apoyar navegadores antiguos pero todavía utilizar métodos más nuevos.
+* body-parser permitimos que se pueda parsear JSON, analizando ya sea función o cadena.
