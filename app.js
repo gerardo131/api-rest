@@ -1,5 +1,6 @@
 
-var express = require('express');
+
+ar express = require('express');
 var app = express(); //app es una instancia de express.
 var bodyParser  = require("body-parser");
 var methodOverride = require("method-override");
@@ -16,7 +17,7 @@ app.use(methodOverride());
 
 // responda con un "hola mundo" cuando una solicitud GET se hace a la página de inicio
 app.get('/', function(req, res) {
-  res.send('hello world');
+  res.send('¡Hola mundo!');
 });
 
 var routes = require('./routes/routes')(app);
